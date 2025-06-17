@@ -117,7 +117,7 @@ textarea {
 /* Mobile portrait & smaller phones (≤ 480px) */
 @media only screen and (max-width: 30em) {
   .heading-primary {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     letter-spacing: 2px;
   }
 }
