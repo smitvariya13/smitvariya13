@@ -62,35 +62,42 @@ button {
 textarea {
   resize: none; }
 
+.heading-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 0 15px;
+}
+
 .heading-primary {
   font-size: 6rem;
   text-transform: uppercase;
   letter-spacing: 3px;
-  text-align: center;
   white-space: nowrap;
-  padding-left: 4.7%;
-  align-items: center;
   overflow: hidden;
-  border-right: 3px solid #ffffff; 
+  border-right: 3px solid #ffffff;
   width: 0;
-  animation: typing 4.5s steps(35, end) forwards infinite, blink-caret 0.75s step-end infinite;
+  animation: typing 4.5s steps(35, end) infinite, blink-caret 0.75s step-end infinite;
 }
 
+/* Typing effect */
 @keyframes typing {
-    0% {
+  0% {
     width: 0;
   }
   63.6% {
-    width: 100%; 
+    width: 100%;
   }
   90% {
-    width: 100%; 
+    width: 100%;
   }
   100% {
     width: 0;
   }
 }
 
+/* Caret blink */
 @keyframes blink-caret {
   0%, 100% {
     border-color: transparent;
@@ -100,27 +107,24 @@ textarea {
   }
 }
 
-/* Tablets & small desktops (≤ 1024px) */
+/* Responsive adjustments */
 @media only screen and (max-width: 64em) {
   .heading-primary {
     font-size: 4.5rem;
   }
 }
-
-/* Mobile landscape (≤ 768px) */
 @media only screen and (max-width: 48em) {
   .heading-primary {
     font-size: 3.5rem;
   }
 }
-
-/* Mobile portrait & smaller phones (≤ 480px) */
 @media only screen and (max-width: 30em) {
   .heading-primary {
     font-size: 2.2rem;
     letter-spacing: 2px;
   }
 }
+
 
 
 .heading-sec__main {
